@@ -3,12 +3,9 @@ package modulos.produto;
 import dataFactory.ProdutoDataFactory;
 import dataFactory.UsuarioDataFactory;
 import io.restassured.http.ContentType;
-import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
@@ -20,7 +17,7 @@ public class ProdutoTest {
     public void beforeEach(){
         // Configurando os dados da API Rest da Lojinha
         baseURI = "http://165.227.93.41";
-        //port = 5555;
+
         basePath = "/lojinha";
 
         // Obter o token do usuário Admin
